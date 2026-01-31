@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: cadetblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color: #2c3e50; 
+    padding: 30px 0;         
+    color: white;         
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+}
+
+header h1 {
+    margin: 0;                 
+    font-size: 2rem;         
+    letter-spacing: 1px;
+}
+
+
+#contenedor-productos {
+    display: flex;          
+    flex-wrap: wrap;        
+    justify-content: center; 
+    gap: 20px;              
+    width: 100%;            
+    margin-top: 20px;
+}
+
+.practice-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    padding: 2rem;        
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+    text-align: center;
+    width: 250px;      
+    cursor: pointer;
+}
+
+.practice-card:hover {
+    border-color: #2a2a2a;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.practice-title {
+    color: #2c3e50;          
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    align-self: center;
+}
+
+.practice-card p {
+    margin: 4px 0; 
+    font-size: 0.9rem;
+}
+
+.practice-img {
+    width: 100%;
+    height: 150px;          
+    object-fit: contain;
+    border-radius: 4px;
+    margin-bottom: 10px;    
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: white; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 2px 10px;
+    max-width: 400px;       
+    margin: 30px auto;      
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#busqueda {
+    border: none; 
+    outline: none;
+    height: 40px;
+    flex: 1;               
+    min-width: 0;          
+    font-size: 16px;
+}
+
+.btn-lupa {
+    background: none;      
+    border: none;          
+    cursor: pointer;      
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;          
+    transition: color 0.2s ease;
+}
+
+.btn-lupa:hover {
+    color: #e67e22;       
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.btn-regresar {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #2c3e50; 
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-regresar:hover {
+    background-color: #1a252f;
+    transform: translateX(-5px);
+}
+
+#contenedor-comentarios {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.comentario-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-left: 5px solid #2c3e50;
+    border-radius: 6px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.comentario-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.comentario-usuario {
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1rem;
+}
+
+.comentario-texto {
+    font-style: italic;
+    color: #555;
+    line-height: 1.4;
+    margin: 10px 0;
+}
+
+.comentario-fecha {
+    font-size: 0.8rem;
+    color: #888;
+    display: block;
+    text-align: right;
+}
