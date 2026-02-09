@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Nuevo Producto</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Alta de Nuevos Productos</h1>
+    </header>
+
+    <main class="form-container">
+        <div class="form-group">
+            <label>Nombre del Producto</label>
+            <input type="text" id="titulo" placeholder="Ej: Smartphone X">
+        </div>
+        <div class="form-group">
+            <label>Precio</label>
+            <input type="number" id="precio" placeholder="0.00">
+        </div>
+        <div class="form-group">
+            <label>Categoría</label>
+            <select id="categoria">
+                <option value="beauty">Beauty</option>
+                <option value="fragrances">Fragrances</option>
+                <option value="furniture">Furniture</option>
+                <option value="groceries">Groceries</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Descripción</label>
+            <textarea id="descripcion" rows="4"></textarea>
+        </div>
+        <div class="form-actions">
+            <a href="index.html" class="btn-back">Cancelar</a>
+            <button class="btn-save" onclick="guardarProducto()">Guardar Producto</button>
+        </div>
+        <div id="mensaje-exito">
+            <p id="texto-exito"></p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p><strong>DummyJSON</strong></p>
+            <p>&copy; Desarrollado por Victor Manuel Hernandez Tomas - TSU en Desarrollo de Software 2026</p>
+        </div>
+    </footer>
+
+    <script src="add.js"></script>
+</body>
+
+</html>

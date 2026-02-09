@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Producto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Modificar Producto</h1>
+    </header>
+    <main class="form-container">
+        <div id="form-edit">
+            <div class="form-group">
+                <label>Nombre del Producto</label>
+                <input type="text" id="titulo-edit">
+            </div>
+            <div class="form-group">
+                <label>Precio</label>
+                <input type="number" id="precio-edit">
+            </div>
+            <div class="form-group">
+                <label>Descripción</label>
+                <textarea id="descripcion-edit" rows="4"></textarea>
+            </div>
+            <div class="form-actions">
+                <button class="btn-back" onclick="window.location.href='index.html'">Regresar</button>
+                <button class="btn-save" onclick="actualizarProducto()">Actualizar Cambios</button>
+            </div>
+            <div id="mensaje-exito"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p><strong>DummyJSON</strong></p>
+            <p>&copy; Desarrollado por Victor Manuel Hernandez Tomas - TSU en Desarrollo de Software 2026</p>
+        </div>
+    </footer>
+
+    <script src="edit.js"></script>
+</body>
+
+</html>
