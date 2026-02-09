@@ -7,6 +7,7 @@ body {
 
 header {
     text-align: center;
+<<<<<<< HEAD
     background-color: #2c3e50;
     padding: 25px 0;
     color: white;
@@ -27,11 +28,51 @@ header h1 {
     margin: 30px auto;
     max-width: 98%;
     padding: 0 10px;
+=======
+    background-color: #2c3e50; 
+    padding: 30px 0;         
+    color: white;         
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+}
+
+header h1 {
+    margin: 0;                 
+    font-size: 2rem;         
+    letter-spacing: 1px;
+}
+
+.search-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    gap: 15px;
+}
+
+.nav-column {
+    flex: 1; 
+    display: flex;
+    align-items: center;
+}
+
+.center-group {
+    justify-content: center; 
+    gap: 10px;
+    flex: 0 1 auto; 
+    min-width: 450px;
+}
+
+.right-align {
+    justify-content: flex-end;
+>>>>>>> 3836e553399b3a1e7242372df398a5282a800d06
 }
 
 .search-container {
     display: flex;
     align-items: center;
+<<<<<<< HEAD
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -75,12 +116,57 @@ header h1 {
 
 .btn-toggle:hover {
     background-color: #1a252f;
+=======
+    background-color: white; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 2px 10px;
+    width: 350px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#busqueda {
+    border: none; 
+    outline: none;
+    height: 40px;
+    flex: 1;                   
+    font-size: 16px;
+}
+
+.btn-lupa {
+    background: none;      
+    border: none;          
+    cursor: pointer;      
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    color: #555;          
+    transition: color 0.2s ease;
+}
+
+.btn-lupa:hover {
+    color: #e67e22;       
+}
+
+.btn-nuevo {
+    background-color: #e67e22; 
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    height: 46px; 
+    cursor: pointer;
+    transition: background 0.3s;
+    white-space: nowrap; 
+>>>>>>> 3836e553399b3a1e7242372df398a5282a800d06
 }
 
 .btn-nuevo:hover {
     background-color: #d35400;
 }
 
+<<<<<<< HEAD
 .btn-clear {
     background-color: #95a5a6;
     color: white;
@@ -161,11 +247,32 @@ header h1 {
     row-gap: 40px;
     align-items: stretch;
     width: 100%;
+=======
+.select-style {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    height: 46px;
+    background-color: white;
+    cursor: pointer;
+    min-width: 160px;
+}
+
+#contenedor-productos {
+    display: flex;          
+    flex-wrap: wrap;        
+    justify-content: center; 
+    gap: 20px;              
+    width: 100%;            
+    margin-top: 20px;
+    padding-bottom: 50px;
+>>>>>>> 3836e553399b3a1e7242372df398a5282a800d06
 }
 
 .practice-card {
     background-color: #ffffff;
     border: 1px solid #e5e5e5;
+<<<<<<< HEAD
     border-radius: 8px;
     padding: 20px;
     display: flex;
@@ -191,15 +298,56 @@ header h1 {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+=======
+    border-radius: 6px;
+    padding: 15px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    width: 260px; 
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.practice-card p {
+    margin: 3px 0; /* Espacio mínimo entre líneas de texto */
+    font-size: 0.95rem;
+    text-align: left; /* Alineado a la izquierda como en tu foto */
+}
+
+.practice-card:hover {
+    border-color: #2c3e50;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.practice-title {
+    color: #2c3e50;          
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0 0 15px 0; /* Espacio solo abajo */
+    text-align: center;
+    min-height: 2.5rem; /* Asegura que títulos de 2 líneas no muevan la imagen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+>>>>>>> 3836e553399b3a1e7242372df398a5282a800d06
 }
 
 .practice-img {
     width: 100%;
+<<<<<<< HEAD
     height: 180px;
+=======
+    height: 140px; /* Altura controlada */
+>>>>>>> 3836e553399b3a1e7242372df398a5282a800d06
     object-fit: contain;
     margin-bottom: 15px;
 }
 
+<<<<<<< HEAD
 .card-actions {
     display: flex;
     gap: 10px;
@@ -423,6 +571,20 @@ footer {
 }
 
 .footer-bottom {
+=======
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px 0 20px 0;
+    margin-top: 50px;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+>>>>>>> 3836e553399b3a1e7242372df398a5282a800d06
     font-size: 0.8rem;
     color: #95a5a6;
 }

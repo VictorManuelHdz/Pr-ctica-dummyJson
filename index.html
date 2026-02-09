@@ -1,10 +1,18 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="es">
+=======
+<html lang="en">
+>>>>>>> 3836e553399b3a1e7242372df398a5282a800d06
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Dashboard - Práctica dummyJson</title>
+=======
+    <title>Práctica dummyJson</title>
+>>>>>>> 3836e553399b3a1e7242372df398a5282a800d06
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,6 +20,7 @@
     <header>
         <h1>Práctica dummyJson</h1>
     </header>
+<<<<<<< HEAD
 
     <main>
         <div class="top-bar">
@@ -83,6 +92,49 @@
         </div>
     </footer>
 
+=======
+    <main>
+        <div class="search-nav">
+            <div class="nav-column center-group">
+                <div class="search-container">
+                    <input type="search" id="busqueda" oninput="ordenarYFiltrar()" placeholder="Buscar...">
+                    <button type="submit" onclick="BuscarProducto()" class="btn-lupa" aria-label="Buscar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                </div>
+                <button class="btn-nuevo" onclick="window.location.href='nuevo_producto.html'">
+                    + Nuevo
+                </button>
+            </div>
+
+            <div class="right-align">
+                <select class="select-style" id="select-category" onchange="filtraCategoria()">
+                    <option value="">Categorías...</option>
+                </select>
+            </div>
+
+            <div class="nav-column right-align">
+                <select class="select-style" id="select-orden" onchange="ordenarYFiltrar()">
+                    <option value="default">Ordenar por...</option>
+                    <option value="price-desc">Precio: Mayor a Menor</option>
+                    <option value="price-asc">Precio: Menor a Mayor</option>
+                    <option value="title-asc">Título: A-Z</option>
+                    <option value="title-desc">Título: Z-A</option>
+                </select>
+            </div>
+        </div>
+        <div id="contenedor-productos"></div>
+    </main>
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Desarrollado por Tu Nombre - Práctica de Desarrollo Web</p>
+        </div>
+    </footer>
+>>>>>>> 3836e553399b3a1e7242372df398a5282a800d06
     <script src="main.js"></script>
 </body>
 
